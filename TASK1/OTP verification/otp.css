@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* *{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #212222;
+    font-family: poppins, sans-serif;
+    display: grid;
+    place-items:center;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+.container{
+    background: #fff;
+    width: 100%;
+    max-width: 500px;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 10px rgba(0,0,0,0);
+    display:grid;
+    gap: 1.5em;
+    text-align: center;
+} 
+.container.contact-box{
+    display: inline;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.container.contact-box h2{
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 5px;
+}
+.container.contact-box p{
+      color: #555;
+      font-size: 14px;
+}
+.container .contact-box .input{
+     display: flex;
+     justify-content: space-between;
+     max-width: 320px;
+     margin: 0 auto;
+     gap: 0.5em;
+
+}
+.container.contact-box .input{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    color: #111;
+    caret-color:transparent;
+    
+}
+.container .contact-box1 h3,h4{
+    font-size: 20px;
+    color: #111;
+    margin-bottom: 5px; 
+}
+.container .contact-box1 button{
+    width: 100px;
+    height: 400px;
+    background:#5e49e4 ;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.container.contact-box1 button:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: initial;
+
+}
+ */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+    background: #353536;
+  }
+  :where(.container, form, .input-field, header) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+}.container {
+    background: #fff;
+    padding: 30px 65px;
+    border-radius: 12px;
+    row-gap: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px 20px 0 20px;
+  }
+  .container header {
+    height: 65px;
+    width: 65px;
+    /* background: #4070f4; */
+    color: #fff;
+    font-size: 2.5rem;
+    border-radius: 50%;
+}
+.container h4 {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: 500;
+}
+form .input-field {
+  flex-direction: row;
+  column-gap: 10px;
+}
+.input-field input {
+    height: 45px;
+    width: 42px;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #ddd;
+
+  }
+  .input-field input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    /* box-shadow: #4070f4; */
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+form button {
+  margin-top: 25px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 0;
+  cursor: pointer;
+  border-radius: 6px;
+  pointer-events: none;
+  background: #6e93f7;
+  transition: all 0.2s ease;
+}
+form button.active {
+  background: #4070f4;
+  pointer-events: auto;
+}
+form button:hover {
+  background: #0e4bf1;
+}
